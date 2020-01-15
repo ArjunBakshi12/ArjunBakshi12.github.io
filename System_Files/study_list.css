@@ -1,0 +1,231 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #181818;
+    color: #f2f2f2;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#ul-brand-link,
+.brand {
+    float: left;
+    padding: .5rem;
+}
+
+
+/* Styling for exam list */
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    padding: 0 1rem;
+}
+
+tbody {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+
+/* setting column widths.
+td's are there in case we want to change text-align */
+
+tr th:nth-of-type(1),
+tr td:nth-of-type(1) {
+    width: 30%;
+}
+
+tr th:nth-of-type(2),
+tr td:nth-of-type(2) {
+    width: 15%;
+}
+
+tr th:nth-of-type(3),
+tr td:nth-of-type(3) {
+    width: 15%;
+}
+
+tr th:nth-of-type(4),
+tr td:nth-of-type(4) {
+    width: 40%;
+}
+
+caption {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: .75rem 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-top: 1px solid #3f3f3f;
+    margin: 0 -1rem;
+}
+
+th,
+td {
+    word-break: normal;
+    border-right: 1px dotted #3f3f3f;
+    padding: .75rem 1rem;
+}
+
+td:first-of-type {
+    border-left: 1px solid transparent;
+}
+
+th:last-child,
+td:last-child {
+    border-right: 1px solid transparent;
+}
+
+th {
+    font-size: .875rem;
+    vertical-align: middle;
+    background-color: #5f5f5f;
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    font-weight: 300;
+    border-right-color: #3f3f3f;
+    letter-spacing: 0.05rem;
+    color: #cfcfcf;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+}
+
+td {
+    font-size: .875rem;
+    background-color: #2f2f2f;
+    border-bottom: 1px solid #3f3f3f;
+    font-weight: 300;
+    padding: 0;
+}
+
+td:first-of-type a {
+    color: #fff;
+}
+
+tr a {
+    display: block;
+    text-decoration: none;
+    color: #cfcfcf;
+    padding: .75rem 1rem;
+}
+
+tr:hover td {
+    background-color: #1f1f1f;
+    cursor: pointer;
+    border-right-color: #2f2f2f;
+}
+
+tr:hover td:first-of-type {
+    border-left: 1px solid #2f2f2f;
+}
+
+tr:hover td:last-child {
+    border-right: 1px solid #2f2f2f;
+}
+
+tr:hover a {
+    color: #78B7FF;
+}
+
+td#no-data {
+    text-align: center;
+    padding: 1rem 0;
+    color: #F04E38;
+    font-weight: 400;
+    background-color: rgba(240, 78, 56, .10);
+}
+
+td#no-data:hover {
+    background-color: rgba(240, 78, 56, .10);
+    cursor: default;
+}
+
+
+/*Exam Header*/
+
+#info-header {
+    position: relative;
+    width: 100%;
+}
+
+.back-link {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    color: #3497ff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: .875rem;
+    opacity: .875;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+#name {
+    clear: left;
+    border-top: 1px solid #3f3f3f;
+    padding: .75rem 0 .5rem 1rem;
+}
+
+#patient-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#info-header ul {
+    padding: 0 0 .0 1rem;
+    margin: 0;
+    display: block;
+}
+
+#info-header li {
+    display: inline-block;
+    font-size: .875rem;
+    padding: 0 2.5rem .75rem 0;
+    font-weight: 300;
+}
+
+#info-header .label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #919191;
+    margin-bottom: .25rem;
+    letter-spacing: 0.05rem;
+}
+
+#info-header .data {
+    display: block;
+}
+
+#viewerEmbed {
+    height: 80%;
+    /* ^ fallback if needed */
+    height: calc(100% - 169px);
+    /* ^ 169px is roughly the height of the <header> element */
+    overflow-y: auto;
+}
+
+#viewerEmbed embed {
+    width: 100%;
+    height: 100%;
+}

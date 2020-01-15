@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<studies>
+  <study Exam_Date="01-03-2020" Exam_Type="Echocardiogram" MRN="396364" Patient_DOB="12-12-1996" Patient_Height="178" Patient_Height_unit="cm" Patient_Name_First="Arjun" Patient_Name_Full="Arjun_Bakshi" Patient_Name_Last="Bakshi" Patient_SEX="M" Patient_Weight="77.566" Patient_Weight_unit="kg" Study_ID="9708572" Study_UUID="61c87deb-fe36-47a2-b6b0-81feb230cca1" />
+</studies>
